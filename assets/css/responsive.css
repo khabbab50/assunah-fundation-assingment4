@@ -1,0 +1,182 @@
+/*====================================================================================================================
+===============================================laptop responsive start===============================================
+====================================================================================================================*/
+@media screen and (max-width: 1200px) {
+  .container {
+    margin: 0 5%;
+    text-align: center;
+  }
+}
+/*====================================================================================================================
+===============================================laptop responsive end===============================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================tablet responsive start===============================================
+====================================================================================================================*/
+@media screen and (max-width: 834px) {
+  header .logo {
+    margin-left: 5%;
+  }
+  header .container {
+    margin: 0;
+  }
+  header nav ul .menu {
+    position: absolute;
+    top: -25%;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #458ff6;
+    z-index: 100;
+  }
+  header nav ul .menu a {
+    color: #fff;
+    opacity: 1;
+  }
+  header nav ul .menu a::after {
+    background: #fff;
+  }
+  header nav ul .close-menu {
+    top: 4%;
+    color: #fff;
+  }
+  header .open-menu,
+  header .close-menu {
+    display: block !important;
+    margin-right: 5%;
+  }
+  header #checkd:checked ~ .menu {
+    right: 0;
+  }
+  /* hero section start  */
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .content {
+    width: 100%;
+  }
+  .hero .image {
+    width: 90%;
+  }
+  #healthcare .container {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    align-items: center;
+    gap: 142px;
+  }
+  /* hero section end  */
+
+  /* services sectio start  */
+  #services header p {
+    width: 90%;
+  }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* services sectio end */
+
+  /* healthcare section start  */
+  #healthcare .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #healthcare .container .image {
+    width: 100%;
+  }
+  #healthcare .container hr {
+    margin: 20px auto;
+  }
+  /* healthcare section end */
+
+  /* app section start */
+  #app .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  #app .container .content {
+    width: 100%;
+  }
+  #app .container .imge {
+    width: 90%;
+    order: 1;
+  }
+  #app .container .content hr {
+    margin: 20px auto;
+  }
+  /* app section end */
+
+  /* review sectio start  */
+  #review {
+    padding: 5%;
+    margin: 50px 0;
+  }
+  .reivew-ditails {
+    flex-direction: column;
+  }
+  .reivew-ditails .image-title {
+    text-align: left;
+  }
+  .reivew-ditails .image-content {
+    margin-bottom: 20px;
+  }
+  #review header hr {
+    margin-bottom: 20px;
+  }
+  .reivew-ditails .reviwe-content {
+    width: 100%;
+  }
+  /* review sectio end */
+
+  /* testimonials section start */
+  .testimonials-items {
+    flex-direction: column;
+  }
+  /* testimonials section end */
+
+  /* footer section start */
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 50px;
+    text-align: left;
+  }
+  /* footer section end */
+}
+
+/*====================================================================================================================
+===============================================tablet responsive end===============================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================mobile responsive start===============================================
+====================================================================================================================*/
+
+@media screen and (max-width: 425px) {
+  .hero .content h1 {
+    font-size: 40px;
+  }
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #review {
+    padding: 5%;
+  }
+  .reivew-ditails .reviwe-content {
+    width: 100%;
+  }
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    gap: 50px;
+    text-align: left;
+  }
+}
+/*====================================================================================================================
+===============================================mobile responsive end===============================================
+====================================================================================================================*/

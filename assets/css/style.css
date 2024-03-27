@@ -1,0 +1,493 @@
+/*====================================================================================================================
+================================================font start==========================================================
+====================================================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/*====================================================================================================================
+================================================font start==========================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================universal sector start=================================================
+====================================================================================================================*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+:root {
+  --whiteColor: #fff;
+  --blackColor: #000;
+
+  --blackDivColor: #1f1534;
+  --grayDivColor: #1f1534;
+  --garyColor: #7d7987;
+
+  --blueColor: #458ff6;
+
+  --blueBackgroun: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
+}
+html,
+body {
+  font-family: "Mulish", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+p {
+  font-size: 18px !important;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: var(--garyColor);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  border: 1.4px solid #458ff6;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blueColor);
+  background: var(--whiteColor);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+hr {
+  width: 56px;
+  height: 3px;
+  border-radius: 5px;
+  background: var(--blackColor);
+  margin: 26px 0 33px 0;
+}
+/*====================================================================================================================
+===============================================universal sectior end=================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================header section start==================================================
+====================================================================================================================*/
+#header {
+  background: var(--whiteColor);
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header nav ul .logo {
+  width: 160px;
+  height: 41px;
+  flex-shrink: 0;
+}
+header nav ul .menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+header nav ul .menu a {
+  color: var(--blackDivColor);
+  opacity: 0.5;
+  text-transform: capitalize;
+  font-size: 18px;
+  position: relative;
+}
+header nav ul .menu a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--blackDivColor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+header nav ul .menu li:hover a::after,
+header nav ul .menu a:hover {
+  width: 100%;
+  opacity: 1;
+}
+header nav ul .close-menu,
+header nav ul .open-menu {
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  font-weight: bold;
+  display: none;
+}
+#checkd {
+  display: none;
+}
+/*====================================================================================================================
+===============================================header section end==================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================hero section start====================================================
+====================================================================================================================*/
+#hero {
+  background: url(../images/element-bg.png) 0 15% no-repeat;
+}
+.hero {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .content {
+  width: 35%;
+}
+.hero .content .btn {
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  background: var(--blueColor);
+  color: var(--whiteColor);
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+.hero .content .btn:hover {
+  background: var(--whiteColor);
+  color: var(--blueColor);
+  border: 1px solid #458ff6;
+}
+.hero .content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero .content p {
+  font-size: 21px;
+  margin: 25px 0;
+}
+.hero .image {
+  width: 55%;
+}
+/*====================================================================================================================
+===============================================hero section end====================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================servisec section start================================================
+====================================================================================================================*/
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/element.png), url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%, 0 25%;
+  background-size: 10%, 41%;
+}
+#services header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services header h2 {
+  font-size: 36px;
+  position: relative;
+}
+
+#services header p {
+  width: 952px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.services .item {
+  border-radius: 20px;
+  background: var(--whiteColor);
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  padding: 54px 45px 46px 39px;
+}
+.services .item img {
+  width: 70px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.services .item h3 {
+  font-size: 24px;
+}
+.services .item p {
+  width: 266px;
+  font-size: 16px;
+}
+#services button.btn {
+  margin: 72px 0;
+}
+#services button.btn:hover {
+  background: var(--blueColor);
+  color: var(--whiteColor);
+}
+/*====================================================================================================================
+===============================================servisec section end================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================healthcare section start==============================================
+====================================================================================================================*/
+#healthcare {
+  margin: 100px 0;
+  background: url(../images/element-bg.png) no-repeat;
+  background-position: 100% 100%;
+}
+#healthcare .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 142px;
+}
+#healthcare .container .image {
+  width: 650px;
+}
+#healthcare .container h2 {
+  font-size: 36px;
+}
+#healthcare .container button {
+  margin-top: 37px;
+}
+#healthcare .container .btn:hover {
+  background: var(--blueColor);
+  color: var(--whiteColor);
+}
+/*====================================================================================================================
+===============================================healthcare section end==============================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================app section start=====================================================
+====================================================================================================================*/
+#app .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+#app .container .content {
+  width: 420px;
+}
+#app .container .content h2 {
+  font-size: 36px;
+}
+#app .container .content .btn {
+  margin-top: 40px;
+}
+#app .container .content .btn:hover {
+  background: var(--blueColor);
+  color: var(--whiteColor);
+}
+#app .container .imge {
+  width: 665px;
+}
+/*====================================================================================================================
+===============================================app section end========================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================review section star====================================================
+====================================================================================================================*/
+#review {
+  border-radius: 24px;
+  background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  padding: 80px 118px;
+  margin: 250px 0;
+}
+#review header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#review header h2 {
+  font-size: 36px;
+  color: var(--whiteColor);
+}
+#review header hr {
+  background: var(--whiteColor);
+  margin-bottom: 104px;
+}
+.reivew-ditails {
+  display: flex;
+  justify-content: space-between;
+  color: var(--whiteColor);
+}
+.reivew-ditails .image-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.reivew-ditails .image-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.reivew-ditails .image-content .image-title h6,
+.reivew-ditails .image-content .image-title p {
+  margin: 0;
+  color: var(--whiteColor);
+}
+.reivew-ditails .image-content .image-title h6 {
+  font-size: 22px;
+}
+.reivew-ditails .image-content .image-title p {
+  font-size: 18px;
+}
+.reivew-ditails .reviwe-content {
+  width: 50%;
+}
+.reivew-ditails .reviwe-content p {
+  color: var(--whiteColor);
+  font-size: 19px;
+}
+/*====================================================================================================================
+===============================================review section end====================================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================testimonials section start============================================
+====================================================================================================================*/
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/Vector.png), url(../images/element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 15%, 2% 9%;
+  background-size: 32%, 10%;
+}
+#testimonials header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-items {
+  display: flex;
+  gap: 34px;
+}
+.testimonials-items .item {
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  background: var(--whiteColor);
+}
+.testimonials-items .item img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.testimonials-items .item .content {
+  padding: 21px 50px 35px 33px;
+}
+.testimonials-items .item .content h3 {
+  font-size: 21px;
+}
+.testimonials-items .item .content p {
+  font-size: 16px;
+}
+.testimonials-items .item .content a {
+  margin-top: 25px;
+  color: var(--blueColor);
+  font-size: 17px;
+}
+#testimonials button {
+  margin: 72px 0;
+}
+#testimonials button.btn:hover {
+  background: var(--blueColor);
+  color: var(--whiteColor);
+}
+/*====================================================================================================================
+===============================================testimonials section end===============================================
+====================================================================================================================*/
+
+/*====================================================================================================================
+===============================================footer section start==================================================
+====================================================================================================================*/
+footer {
+  background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  padding: 109px 0;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .logo h4 {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--whiteColor);
+  color: var(--blueColor);
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 12px;
+}
+footer .logo h5 {
+  color: var(--whiteColor);
+  font-size: 24px;
+  font-weight: 700;
+}
+footer p {
+  width: 391px;
+  color: var(--whiteColor);
+  font-size: 18px;
+  font-weight: 300;
+}
+footer h2 {
+  font-size: 20px;
+  color: var(--whiteColor);
+  text-transform: capitalize;
+}
+footer ul li {
+  margin: 15px 0;
+}
+footer ul li a {
+  font-size: 18px;
+  color: var(--whiteColor);
+}
+/*====================================================================================================================
+===============================================footer section end==================================================
+====================================================================================================================*/
